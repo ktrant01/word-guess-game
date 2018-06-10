@@ -1,7 +1,7 @@
 
 
 
-var words = ["lasso", "saddle", "outlaw", "saloon"];
+var words = ["madonna", "cher", "robocop"];
 
 // <!--  Get Random Word
 var randomIndex = Math.floor(Math.random()*words.length);	
@@ -87,14 +87,6 @@ function winscreen(){
     }
 }
 
-//Change Music (Doesn't work, need to fix this)
-function changeMusic(){
-    if (obfuscatedWord == worddelimited){
-        alert('Music');
-    }
-}
-
-
 // function resetGame(){
 //     guessesLeft = 10;
 //     getrandomWord();
@@ -133,8 +125,6 @@ for (var x=0; x < word.length; x++){
  
 function guess(event){
     // Play Intro Music
-    changeMusic();
-
     audio.play();
 
     event.key = letter;
@@ -176,6 +166,7 @@ document.querySelector('#counter').innerText = obfuscatedWord.join(" ");
 document.querySelector('#guessedLetterline').innerText = guessedLetter;
 winscreen();
 loseScreen();
+
 }
 // guess();
 document.onkeyup = guess;
