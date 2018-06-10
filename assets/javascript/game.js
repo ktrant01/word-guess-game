@@ -19,7 +19,9 @@ var guessesLeft = "10"
 var correctGuesses = 0
 var wins = 0
 var losses = 0
-var audio = new Audio('intro.mp3');
+var audio = new Audio('assets/javascript/intro.mp3');
+var audio1 = new Audio('assets/javascript/ricochet.mp3');
+var audio2 = new Audio('assets/javascript/chimes.mp3');
 
 
 //Play intro music
@@ -57,6 +59,7 @@ function loseScreen(){
         document.querySelector('#winlossScreen').innerText = "You Lose";
         losses++;
         document.querySelector('#losses').innerText = losses; 
+        audio2.play();
         guessesLeft = 10;
         obfuscatedWord = [];
         correctGuesses = 0;
@@ -74,6 +77,7 @@ function winscreen(){
         document.querySelector('#winlossScreen').innerText = "You Win";
         wins++;
         document.querySelector('#wins').innerText = wins;
+        audio1.play();
         guessesLeft = 10;
         obfuscatedWord = [];
         correctGuesses = 0;
@@ -90,7 +94,7 @@ function winscreen(){
 //Change Music (Doesn't work, need to fix this)
 function changeMusic(){
     if (obfuscatedWord == worddelimited){
-        alert('Music');
+        // alert('Music');
     }
 }
 
