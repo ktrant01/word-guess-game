@@ -19,7 +19,7 @@ var guessesLeft = "10"
 var correctGuesses = 0
 var wins = 0
 var losses = 0
-var audio = new Audio('../assets/javascript/intro.mp3');
+var audio = new Audio('assets/javascript/intro.mp3');
 
 
 //Play intro music
