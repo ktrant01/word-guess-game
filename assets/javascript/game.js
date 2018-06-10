@@ -21,7 +21,7 @@ var wins = 0
 var losses = 0
 var audio = new Audio('assets/javascript/intro.mp3');
 var audio1 = new Audio('assets/javascript/ricochet.mp3');
-var audio2 = new Audio('assets/javascript/chimes.mp3');
+var audio2 = new Audio('assets/javascript/s45.wav');
 
 
 //Play intro music
